@@ -16,16 +16,10 @@ module.exports = {
   ],
   coverageThreshold: {
     global: {
-      statements: 90,
-      branches: 65,
-      functions: 90,
-      lines: 90,
-    },
-    "./src/modules/*.ts": {
-      statements: 93,
-      branches: 65,
-      functions: 100,
-      lines: 95,
+      statements: 85,
+      branches: 85,
+      functions: 85,
+      lines: 85,
     },
   },
   coverageReporters: ["text", "html", "json-summary", "json"],

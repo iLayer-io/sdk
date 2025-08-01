@@ -21,7 +21,7 @@ First import the `iLayerRFQ` from the SDK and create an instance of it. This cla
 
 ```typescript
 import { iLayerRFQ } from "@ilayer/sdk";
-const rfq = iLayerRfqHelper();
+const rfq = new iLayerRfqHelper();
 ```
 
 Then subscribe to the RFQ network to receive quotes.
@@ -48,7 +48,7 @@ First import the `iLayerContractHelper` from the SDK and create an instance of i
 ```typescript
 import { iLayerContractHelper } from "@ilayer/sdk";
 
-const contractHelper = iLayerContractHelper();
+const contractHelper = new iLayerContractHelper();
 ```
 
 Now you can use the `contractHelper` to interact directly with the iLayer smart contracts. For example, you can get create a new order with:

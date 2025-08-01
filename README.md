@@ -24,6 +24,23 @@ import { iLayerRFQ } from "@ilayer/sdk";
 const rfq = iLayerRfqHelper();
 ```
 
+Then subscribe to the RFQ network to receive quotes.
+
+```typescript
+const rfqResponse = await rfq.sendOrder(rfqRequest);
+```
+
+Or you can subscribe to the RFQ network to receive quotes in real-time.
+
+```typescript
+const unsubscribe = rfq.onOrderUpdate((update) => {
+  console.log("Order quote updated:", update);
+});
+
+// later, when you no longer need updates
+unsubscribe();
+```
+
 ### Contracts (EVM)
 
 First import the `iLayerContractHelper` from the SDK and create an instance of it. This helper provides methods to interact with the iLayer smart contracts.
